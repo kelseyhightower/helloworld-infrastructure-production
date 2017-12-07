@@ -15,7 +15,7 @@ spec:
         app: helloworld
     spec:
       containers:
-      - image: gcr.io/hightowerlabs/helloworld
+      - image: gcr.io/hightowerlabs/helloworld:1.0.0
         name: helloworld
         ports:
         - containerPort: 80
