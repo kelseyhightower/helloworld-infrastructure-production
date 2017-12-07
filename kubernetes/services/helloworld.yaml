@@ -1,0 +1,14 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: helloworld
+  namespace: default
+spec:
+  selector:
+    app: helloworld
+  ports:
+    - name: http
+      protocol: TCP
+      port: 80
+      targetPort: 80
+  type: NodePort
